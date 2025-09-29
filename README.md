@@ -22,26 +22,32 @@ Este repo contiene varios ejercicios prácticos para aprender a trabajar con **D
 ### 1️⃣ Construir las imágenes
 ```bash
 sudo docker-compose build
-2️⃣ Levantar los servicios
-bash
+```
+
+### 2️⃣ Levantar los servicios
+```bash
 Copy code
 sudo docker-compose up
+```
 Esto levantará los contenedores definidos en docker-compose.yml.
 
-3️⃣ Acceder a la aplicación
+### 3️⃣ Acceder a la aplicación
 Abre en el navegador:
 
-arduino
+```arduino
 Copy code
 http://localhost
-⚡ Task6: Escalar el back-end
+```
+
+## ⚡ Task6: Escalar el back-end
 En task6, la API puede escalarse fácilmente con el flag --scale.
 
 Ejemplo para levantar 2 contenedores back-end:
 
-bash
+```bash
 Copy code
 sudo docker-compose up --scale back-end=2
+```
 Esto creará:
 
 task6-back-end-1
@@ -58,11 +64,13 @@ El comando exacto usado para esto se encuentra en:
 
 Copy code
 task6/2-api-servers.txt
+
 🛠️ Requisitos
 Docker ≥ 20.10
 
 Docker Compose (paquete docker-compose-plugin o el binario clásico)
 
 ✨ Autor
+Emanuel Rosa Alamo
 Proyecto realizado como parte del programa Holberton School.
 Repositorio: holbertonschool-softy-pinko-docker
